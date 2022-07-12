@@ -2,6 +2,23 @@ h1{
     color: red;
 }
 
+#blog{
+
+    .blog{
+
+        &-container{
+
+        }
+
+        &-box{
+            display: flex;
+        }
+
+        &-boxes{
+            justify-content: space-around;
+        }
+    }
+}
 
 footer {
     text-align: center;
