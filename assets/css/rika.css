@@ -14,17 +14,20 @@ h1 {
 }
 
 #blog .blog-box {
-  text-align: center;
   display: flex;
+  justify-content: space-between;
 }
 
 #blog .blog-boxes {
-  text-align: center;
-  width: 341px;
+  width: 320px;
 }
 
 #blog .blog-boxes-p {
-  padding: 7px;
+  padding: 0 15px;
+}
+
+#blog .blog-boxes-p .day {
+  padding: 5px 0;
 }
 
 footer {
