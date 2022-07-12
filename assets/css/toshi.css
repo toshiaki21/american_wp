@@ -1,4 +1,3 @@
-@charset "UTF-8";
 header {
   height: 120px;
   background-color: white;
@@ -47,9 +46,19 @@ header input {
 }
 
 @media screen and (max-width: 767px) {
+  main {
+    width: 100%;
+  }
+  .kv-container {
+    position: relative;
+  }
+  .kv-logo {
+    position: absolute;
+    top: -500px;
+    left: 350px;
+  }
   header {
     overflow: hidden;
-    position: fixed;
     width: 100%;
   }
   .header-left img {
@@ -66,53 +75,6 @@ header input {
   }
   .header-right ul {
     display: block;
-  }
-  /* ハンバーガーメニュー */
-  .hamburger {
-    width: 30px;
-    height: 30px;
-    display: block;
-    cursor: pointer;
-  }
-  .hamburger .pate,
-  .hamburger .pate::before,
-  .hamburger .pate::after {
-    width: 100%;
-    height: 5px;
-    display: block;
-    background-color: grey;
-    border-radius: 2px;
-    transition: all .5s ease;
-  }
-  .hamburger .pate {
-    position: relative;
-    top: calc(50% - 2px);
-  }
-  .hamburger .pate::before,
-  .hamburger .pate::after {
-    position: absolute;
-    content: '';
-  }
-  .hamburger .pate::before {
-    top: -9px;
-  }
-  .hamburger .pate::after {
-    top: 9px;
-  }
-  #hamburger:checked + .hamburger .pate {
-    background-color: transparent;
-  }
-  #hamburger:checked + .hamburger .pate::before {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  #hamburger:checked + .hamburger .pate::after {
-    transform: rotate(-45deg) translate(7px, -8px);
-  }
-  #hamburger:checked ~ .header-right {
-    right: 0;
-  }
-  #hamburger {
-    display: none;
   }
 }
 /*# sourceMappingURL=toshi.css.map */
