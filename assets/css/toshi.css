@@ -1,1 +1,43 @@
-/* No CSS *//*# sourceMappingURL=toshi.css.map */
+header {
+  height: 120px;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header input {
+  display: none;
+}
+
+.header-right ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-right li {
+  margin-right: 20px;
+}
+
+.kv-container {
+  text-align: center;
+  position: relative;
+}
+
+.kv-container .kv-logo {
+  position: absolute;
+  top: -110px;
+  left: 130px;
+}
+
+.kv-container .kv-slide {
+  text-align: center;
+}
+
+.kv-container .kv-text {
+  position: absolute;
+  top: 235px;
+  left: 785px;
+}
+/*# sourceMappingURL=toshi.css.map */
