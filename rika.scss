@@ -1,21 +1,36 @@
+main{
+    width: 1152px;
+}
+
 h1{
-    color: red;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 #blog{
+    
 
     .blog{
 
         &-container{
-
+            
         }
 
         &-box{
+            text-align: center;
             display: flex;
+            
+            
         }
 
         &-boxes{
-            justify-content: space-around;
+            text-align: center;
+            margin: 15px;
+
+            p{
+                padding: 10px;
+            }
         }
     }
 }
