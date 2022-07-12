@@ -29,7 +29,7 @@ header input {
 .kv-container .kv-logo {
   position: absolute;
   top: -110px;
-  left: 130px;
+  left: 10px;
 }
 
 .kv-container .kv-slide {
@@ -39,7 +39,11 @@ header input {
 .kv-container .kv-text {
   position: absolute;
   top: 235px;
-  left: 785px;
+  left: 655px;
+}
+
+#kv h2 {
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 767px) {

@@ -31,7 +31,7 @@ header{
   .kv-logo{
     position: absolute;
     top: -110px;
-    left: 130px;
+    left: 10px;
   }
 
   .kv-slide{
@@ -41,11 +41,19 @@ header{
   .kv-text{
     position: absolute;
     top: 235px;
-    left: 785px;
+    left: 655px;
     // border: solid 1px gold;  
   }
-
 }
+
+#kv{
+  h2{
+    margin-left: 20px;
+  }
+}
+
+
+
 
 
 // レスポンシブ対応
