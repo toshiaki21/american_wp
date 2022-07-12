@@ -1,5 +1,6 @@
 main {
   width: 1152px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -20,6 +21,8 @@ h1 {
 
 #blog .blog-boxes {
   width: 320px;
+  height: 400px;
+  margin-bottom: 30px;
 }
 
 #blog .blog-boxes-p {
@@ -28,6 +31,26 @@ h1 {
 
 #blog .blog-boxes-p .day {
   padding: 5px 0;
+}
+
+#blog .blog-boxes h2 {
+  position: relative;
+}
+
+#blog .blog-boxes h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #0097A7;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+#blog .blog-boxes:hover {
+  top: -3px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 footer {
