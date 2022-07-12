@@ -35,7 +35,14 @@
         <div class="kv-container">
             <img class="kv-logo" src="./img/logo.png" alt="logo">
 
-            <img class="kv-slide" src="img/visual_1_pc.png" alt="view">
+            <picture class="kv-slide">
+                <source srcset="img/visual_1_pc.png" media="(min-width: 768px)" /><!-- ○○px以上で表示する画像 -->
+                <source srcset="./img/visual_1_sp.png" media="(min-width: 10px)" /><!-- △△px以上で表示する画像 -->
+                <img src="./img/visual_1_sp.png" alt="view"/>
+            </picture>
+
+
+            <!-- <img class="kv-slide" src="img/visual_1_pc.png" alt="view"> -->
 
             <img class="kv-text" src="./img/visual_text_pc.png" alt="American_village">
         </div>    
