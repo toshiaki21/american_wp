@@ -8,6 +8,11 @@ h1 {
   font-weight: 700;
 }
 
+#blog .blog-container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 #blog .blog-box {
   text-align: center;
   display: flex;
@@ -15,11 +20,11 @@ h1 {
 
 #blog .blog-boxes {
   text-align: center;
-  margin: 15px;
+  width: 341px;
 }
 
-#blog .blog-boxes p {
-  padding: 10px;
+#blog .blog-boxes-p {
+  padding: 7px;
 }
 
 footer {

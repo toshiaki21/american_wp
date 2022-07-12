@@ -14,7 +14,8 @@ h1{
     .blog{
 
         &-container{
-            
+            width: 1024px;
+            margin: 0 auto;
         }
 
         &-box{
@@ -25,11 +26,12 @@ h1{
         }
 
         &-boxes{
+            // border: 1px solid black;
             text-align: center;
-            margin: 15px;
+            width: 341px;
 
-            p{
-                padding: 10px;
+            &-p{
+                padding: 7px;
             }
         }
     }
