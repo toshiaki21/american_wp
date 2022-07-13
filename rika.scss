@@ -1,6 +1,10 @@
 main{
     width: 1152px;
     margin: 0 auto;
+
+    @media screen and (max-width: 767px){
+
+    }
 }
 
 h1{
@@ -8,6 +12,13 @@ h1{
     text-align: center;
     font-size: 40px;
     font-weight: 700;
+
+    @media screen and (max-width: 767px){
+        
+        font-size: 30px;
+        margin: 20px 0 10px;
+        
+    }
 }
 
 #blog{
@@ -32,6 +43,10 @@ h1{
             height: 400px;
             margin-bottom: 30px;
             position:relative;
+
+            @media screen and (max-width: 767px){
+                width: 100%;
+            }
 
             
 
@@ -89,6 +104,10 @@ footer {
     background-color: black;
     border: 1.43px solid #000000;
     padding: 25px;
+
+    @media screen and (max-width: 767px){
+        font-size: 12px;
+    }
 }
 
 
@@ -102,15 +121,17 @@ footer {
     //     margin: 0 auto;
     // }
 
-    h1{
-        font-size: 30px;
-        margin: 20px 0 10px;
-    }
+    
 
     #blog{
 
         .blog{
             
+            &-container{
+                width: 100%;
+                margin: 0 auto;
+            }
+    
             &-box{
                 display: block;
                 text-align: center;

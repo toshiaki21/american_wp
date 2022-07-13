@@ -10,6 +10,13 @@ h1 {
   font-weight: 700;
 }
 
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+    margin: 20px 0 10px;
+  }
+}
+
 #blog .blog-container {
   width: 1024px;
   margin: 0 auto;
@@ -27,6 +34,12 @@ h1 {
   height: 400px;
   margin-bottom: 30px;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  #blog .blog-boxes {
+    width: 100%;
+  }
 }
 
 #blog .blog-boxes-p {
@@ -74,9 +87,15 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  h1 {
-    font-size: 30px;
-    margin: 20px 0 10px;
+  footer {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #blog .blog-container {
+    width: 100%;
+    margin: 0 auto;
   }
   #blog .blog-box {
     display: block;
