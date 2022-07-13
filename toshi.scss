@@ -38,8 +38,11 @@ header{
     text-align: center;
   }
 
+
+
   .kv-text{
     position: absolute;
+
     top: 235px;
     left: 655px;
     // border: solid 1px gold;  
@@ -64,29 +67,107 @@ header{
   }
 
   header{
-    height: 200px;
+    height: 100px;
+    overflow: hidden;
+    // position: fixed;
+    width: 100%;
+  }
+
+  .header-right{
+    position: fixed;
+    top: 85px;
+    right: -200px;
+    transition: right 1s ease;
+
+    ul{
+      display: block;
+    }
   }
 
   #kv{
     margin-top: 30px;
+    h2{
+      text-align: center;
+    }
   }
 
   .kv-container{
     position: static;
-  }
 
-  .kv-logo{
-    position: static;
-    text-align: center;
+    .kv-logo{
+      position: static;
+    }
+
+  
   }
 
   .kv-text{
    border: solid 1px gold;
+   position: static;
   }
 
 
-  
+  // ハンバーガーメニュー
+  .hamburger {
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
 
+  .pate,
+  .pate::before,
+  .pate::after{
+    width: 100%;
+    height: 5px;
+    display: block;
+    background-color: grey;
+    border-radius: 2px;
+    transition: all .5s ease;
+  }
+
+  .pate{
+    position: relative;
+    top: calc(50% - 2px);
+
+    &::before,
+    &::after{
+      position: absolute;
+    content: '';
+    }
+
+    &::before{
+      top: -9px;
+    }
+
+    &::after{
+      top: 9px;
+    }
+  }
+}
+  
+#hamburger{
+  display: none;
+
+  &:checked{
+    + .hamburger .pate{
+      background-color: transparent;
+
+      &::before{
+        transform: rotate(45deg) translate(5px,5px);
+      } 
+  
+      &::after{
+        transform: rotate(-45deg) translate(7px,-8px);
+      }
+
+      ~ .header-right{
+        right: 0;
+      }
+
+    }    
+
+}  
+}
 
   // レスポンシブの大外
 }
