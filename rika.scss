@@ -23,7 +23,7 @@ h1{
         &-box{
             display: flex;
             justify-content: space-between;
-            
+            margin-bottom: 100px;
         }
 
         &-boxes{
@@ -114,6 +114,7 @@ footer {
             &-box{
                 display: block;
                 text-align: center;
+                margin-bottom: 10px;
             }
         }
 
