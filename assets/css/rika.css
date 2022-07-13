@@ -71,4 +71,18 @@ footer {
   border: 1.43px solid #000000;
   padding: 25px;
 }
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+    margin: 20px 0 10px;
+  }
+  #blog .blog-box {
+    display: block;
+    text-align: center;
+  }
+  .footer {
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=rika.css.map */

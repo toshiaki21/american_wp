@@ -63,5 +63,8 @@ header input {
     position: static;
     text-align: center;
   }
+  .kv-text {
+    border: solid 1px gold;
+  }
 }
 /*# sourceMappingURL=toshi.css.map */
