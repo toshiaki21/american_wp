@@ -18,6 +18,7 @@ h1 {
 #blog .blog-box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 #blog .blog-boxes {
@@ -80,6 +81,7 @@ footer {
   #blog .blog-box {
     display: block;
     text-align: center;
+    margin-bottom: 10px;
   }
   .footer {
     font-size: 12px;
