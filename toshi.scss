@@ -49,6 +49,7 @@ header{
 #kv{
   h2{
     margin-left: 20px;
+    position: relative;
   }
 }
 
@@ -62,41 +63,30 @@ header{
     width: 100%;
   }
 
+  header{
+    height: 200px;
+  }
+
+  #kv{
+    margin-top: 30px;
+  }
 
   .kv-container{
-    position: relative;
+    position: static;
   }
 
   .kv-logo{
-    position: absolute;
-    top: -500px;
-    left: 350px;
+    position: static;
+    text-align: center;
+  }
+
+  .kv-text{
+   border: solid 1px gold;
   }
 
 
-  header{
-    overflow: hidden;
-    // position: fixed;
-    width: 100%;
-  }
   
-  .header-left img{
-    width: 80%;
-    margin-top: 5%;
-  }
 
-  .header-right{
-    font-size: 13px;
-    position: fixed;
-    top: 85px;
-    right: -200px;
-    transition: right 1s ease;
-    color: white;
-  }
-
-  .header-right ul{
-    display: block;
-  } 
 
   // レスポンシブの大外
 }
