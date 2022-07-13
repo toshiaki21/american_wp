@@ -125,5 +125,8 @@ header input {
   #hamburger:checked + .hamburger .pate ~ .header-right {
     right: 0;
   }
+  .kv-text {
+    border: solid 1px gold;
+  }
 }
 /*# sourceMappingURL=toshi.css.map */
