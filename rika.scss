@@ -1,3 +1,7 @@
+body{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
 main{
     width: 1152px;
     margin: 0 auto;
@@ -29,20 +33,29 @@ h1{
         &-container{
             width: 1024px;
             margin: 0 auto;
+
+            @media screen and (max-width: 767px){
+                width: 100%;
+                margin: 0 auto;
+            }
         }
 
         &-box{
             display: flex;
             justify-content: space-between;
             margin-bottom: 100px;
+
+            @media screen and (max-width: 767px){
+                display: block;
+                text-align: center;
+                margin-bottom: 10px;
+            }
         }
 
         &-boxes{
             border: 1px solid black;
             width: 320px;
-            height: 400px;
             margin-bottom: 30px;
-            position:relative;
 
             @media screen and (max-width: 767px){
                 width: 100%;
@@ -52,24 +65,31 @@ h1{
 
             &-p{
                 padding: 0 15px ;
-                
+                height: 200px;
+                position: relative;
 
+                @media screen and (max-width: 767px){
+                    padding: 0px 40px;
+                }
+                
                 .day{
                     padding: 5px 0 ;
                 }
 
-                .text{
-                    // border: 1px solid;
-                }
                 
             }
 
             h2{
-                position:relative;
-                // text-align: right;
-                font-size: 12px;
-                top: 55px;
-                left: 210px;
+                right: 0;
+                position: absolute;
+                font-size: 13px;
+                bottom: 30px;
+                
+
+                @media screen and (max-width: 767px){
+                    font-size: 13px;
+                    right: 45px;
+                }
             }
 
 
@@ -82,7 +102,7 @@ h1{
                 background-color: black;
                 position: absolute;
                 bottom: -10px;
-                left: 55px;
+                right: 0px;
                 transition: 0.5s;
             }
              
@@ -93,6 +113,7 @@ h1{
 
             h2::after{
                 width: 80px;
+                right: 20px;
             }
         }
     }
@@ -108,41 +129,4 @@ footer {
     @media screen and (max-width: 767px){
         font-size: 12px;
     }
-}
-
-
-
-
-// レスポンシブ対応
-@media screen and (max-width: 767px) {
-
-    // main{
-        
-    //     margin: 0 auto;
-    // }
-
-    
-
-    #blog{
-
-        .blog{
-            
-            &-container{
-                width: 100%;
-                margin: 0 auto;
-            }
-    
-            &-box{
-                display: block;
-                text-align: center;
-                margin-bottom: 10px;
-            }
-        }
-
-    }
-
-    .footer{
-        font-size: 12px;
-    }
-    
 }
