@@ -4,6 +4,7 @@ main {
 }
 
 h1 {
+  margin: 80px 0 50px;
   text-align: center;
   font-size: 40px;
   font-weight: 700;
@@ -20,9 +21,11 @@ h1 {
 }
 
 #blog .blog-boxes {
+  border: 1px solid black;
   width: 320px;
   height: 400px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 #blog .blog-boxes-p {
@@ -35,17 +38,20 @@ h1 {
 
 #blog .blog-boxes h2 {
   position: relative;
+  font-size: 12px;
+  top: 55px;
+  left: 210px;
 }
 
 #blog .blog-boxes h2::after {
   content: "";
   display: block;
   width: 20px;
-  height: 3px;
+  height: 2px;
   background-color: black;
   position: absolute;
-  bottom: 0;
-  left: 10px;
+  bottom: -10px;
+  left: 55px;
   transition: 0.5s;
 }
 
