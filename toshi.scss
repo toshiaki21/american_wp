@@ -23,9 +23,11 @@ header{
     z-index: 2;
   }
 
-  h2{
+  h3{
     margin-left: 20px;
     position: relative;
+
+
   }
 }
 
@@ -92,8 +94,9 @@ header{
     }
 
     h3{
-      text-align: center;
-      
+      span{
+        display: block;
+      }
     }
   }
 
@@ -106,10 +109,10 @@ header{
       background-color: gray;
    
        position: absolute;
-       width: 100%;
+       width: 80%;
        height: auto;
        top: 270px;
-       left: 0%;
+       left: 0px;
        // border: solid 1px gold;  
      }
   }

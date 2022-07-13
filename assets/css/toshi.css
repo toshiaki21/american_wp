@@ -23,7 +23,7 @@ header input {
   z-index: 2;
 }
 
-#kv h2 {
+#kv h3 {
   margin-left: 20px;
   position: relative;
 }
@@ -78,8 +78,8 @@ header input {
   #kv .kv-logo {
     position: static;
   }
-  #kv h3 {
-    text-align: center;
+  #kv h3 span {
+    display: block;
   }
   .kv-container {
     position: static;
@@ -89,10 +89,10 @@ header input {
     position: static;
     background-color: gray;
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: auto;
     top: 270px;
-    left: 0%;
+    left: 0px;
   }
 }
 /*# sourceMappingURL=toshi.css.map */
