@@ -40,17 +40,22 @@ h1 {
 #blog .blog-boxes h2::after {
   content: "";
   display: block;
-  width: 80px;
+  width: 20px;
   height: 3px;
-  background-color: #0097A7;
+  background-color: black;
   position: absolute;
   bottom: 0;
   left: 10px;
+  transition: 0.5s;
 }
 
 #blog .blog-boxes:hover {
   top: -3px;
   box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+#blog .blog-boxes:hover h2::after {
+  width: 80px;
 }
 
 footer {
