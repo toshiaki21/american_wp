@@ -11,6 +11,23 @@ header input {
   display: none;
 }
 
+#kv {
+  border: solid 1px black;
+  position: relative;
+}
+
+#kv .kv-logo {
+  position: absolute;
+  top: -110px;
+  left: 10px;
+  z-index: 2;
+}
+
+#kv h2 {
+  margin-left: 20px;
+  position: relative;
+}
+
 .header-right ul {
   display: flex;
   list-style: none;
@@ -22,13 +39,8 @@ header input {
 
 .kv-container {
   text-align: center;
+  border: solid 1px gold;
   position: relative;
-}
-
-.kv-container .kv-logo {
-  position: absolute;
-  top: -110px;
-  left: 10px;
 }
 
 .kv-container .kv-slide {
@@ -37,13 +49,9 @@ header input {
 
 .kv-container .kv-text {
   position: absolute;
-  top: 235px;
-  left: 655px;
-}
-
-#kv h2 {
-  margin-left: 20px;
-  position: relative;
+  width: 100%;
+  top: 0px;
+  left: -150px;
 }
 
 @media screen and (max-width: 767px) {
@@ -51,7 +59,7 @@ header input {
     width: 100%;
   }
   header {
-    height: 100px;
+    height: 350px;
     overflow: hidden;
     width: 100%;
   }
@@ -73,12 +81,10 @@ header input {
   .kv-container {
     position: static;
   }
-  .kv-container .kv-logo {
-    position: static;
-  }
   .kv-text {
     border: solid 1px gold;
     position: static;
+    background-color: gray;
   }
   .hamburger {
     width: 30px;
@@ -124,9 +130,6 @@ header input {
   }
   #hamburger:checked + .hamburger .pate ~ .header-right {
     right: 0;
-  }
-  .kv-text {
-    border: solid 1px gold;
   }
 }
 /*# sourceMappingURL=toshi.css.map */

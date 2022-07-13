@@ -12,6 +12,23 @@ header{
   }
 }
 
+#kv{
+  border: solid 1px black;
+  position: relative;
+
+  .kv-logo{
+    position: absolute;
+    top: -110px;
+    left: 10px;
+    z-index: 2;
+  }
+
+  h2{
+    margin-left: 20px;
+    position: relative;
+  }
+}
+
 .header-right{
   ul{
     display: flex;
@@ -25,14 +42,8 @@ header{
 
 .kv-container{
   text-align: center;
-  // border: solid 1px gold;
+  border: solid 1px gold;
   position: relative;
-
-  .kv-logo{
-    position: absolute;
-    top: -110px;
-    left: 10px;
-  }
 
   .kv-slide{
     text-align: center;
@@ -42,19 +53,14 @@ header{
 
   .kv-text{
     position: absolute;
-
-    top: 235px;
-    left: 655px;
+    width: 100%;
+    top: 0px;
+    left: -150px;
     // border: solid 1px gold;  
   }
 }
 
-#kv{
-  h2{
-    margin-left: 20px;
-    position: relative;
-  }
-}
+
 
 
 
@@ -67,7 +73,7 @@ header{
   }
 
   header{
-    height: 100px;
+    height: 350px;
     overflow: hidden;
     // position: fixed;
     width: 100%;
@@ -86,6 +92,9 @@ header{
 
   #kv{
     margin-top: 30px;
+
+    
+
     h2{
       text-align: center;
     }
@@ -93,17 +102,12 @@ header{
 
   .kv-container{
     position: static;
-
-    .kv-logo{
-      position: static;
-    }
-
-  
   }
 
   .kv-text{
    border: solid 1px gold;
    position: static;
+   background-color: gray;
   }
 
 
