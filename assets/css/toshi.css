@@ -50,8 +50,8 @@ header input {
 .kv-container .kv-text {
   position: absolute;
   width: 100%;
-  top: 0px;
-  left: -150px;
+  top: 235px;
+  left: 325px;
 }
 
 @media screen and (max-width: 767px) {
@@ -59,7 +59,7 @@ header input {
     width: 100%;
   }
   header {
-    height: 350px;
+    height: 0px;
     overflow: hidden;
     width: 100%;
   }
@@ -73,18 +73,26 @@ header input {
     display: block;
   }
   #kv {
-    margin-top: 30px;
+    text-align: center;
   }
-  #kv h2 {
+  #kv .kv-logo {
+    position: static;
+  }
+  #kv h3 {
     text-align: center;
   }
   .kv-container {
     position: static;
   }
-  .kv-text {
+  .kv-container .kv-text {
     border: solid 1px gold;
     position: static;
     background-color: gray;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 270px;
+    left: -80px;
   }
   .hamburger {
     width: 30px;

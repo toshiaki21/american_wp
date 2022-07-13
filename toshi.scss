@@ -45,26 +45,19 @@ header{
   border: solid 1px gold;
   position: relative;
 
+
   .kv-slide{
     text-align: center;
   }
 
-
-
   .kv-text{
-    position: absolute;
-    width: 100%;
-    top: 0px;
-    left: -150px;
-    // border: solid 1px gold;  
+      position: absolute;
+      width: 100%;
+      top: 235px;
+      left: 325px;
+      // border: solid 1px gold;  
   }
 }
-
-
-
-
-
-
 
 // レスポンシブ対応
 @media screen and (max-width: 767px) {
@@ -73,7 +66,7 @@ header{
   }
 
   header{
-    height: 350px;
+    height: 0px;
     overflow: hidden;
     // position: fixed;
     width: 100%;
@@ -91,24 +84,39 @@ header{
   }
 
   #kv{
-    margin-top: 30px;
+    // margin-top: 30px;
+    text-align: center;
 
-    
+    .kv-logo{
+      position: static;
+    }
 
-    h2{
+    h3{
       text-align: center;
+      
     }
   }
 
   .kv-container{
     position: static;
+
+    .kv-text{
+      border: solid 1px gold;
+      position: static;
+      background-color: gray;
+   
+       position: absolute;
+       width: 100%;
+       height: auto;
+       top: 270px;
+       left: -80px;
+       // border: solid 1px gold;  
+     }
   }
 
-  .kv-text{
-   border: solid 1px gold;
-   position: static;
-   background-color: gray;
-  }
+
+
+
 
 
   // ハンバーガーメニュー
