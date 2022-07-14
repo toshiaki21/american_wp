@@ -120,25 +120,25 @@ h1{
 }
 
 footer {
-    text-align: center;
-    color: white;
-    background-color: black;
-    border: 1.43px solid #000000;
-    padding: 25px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border: 1.43px solid #000000;
+  padding: 25px;
 
-    @media screen and (max-width: 767px){
-        font-size: 12px;
-    }
+  @media screen and (max-width: 767px){
+    font-size: 12px;
+  }
 }
 
 
 
-  // ハンバーガーメニュー
-  .hamburger {
-    width: 30px;
-    height: 30px;
-    display: block;
-    cursor: pointer;
+// ハンバーガーメニュー
+.hamburger {
+  width: 30px;
+  height: 30px;
+  display: block;
+  cursor: pointer;
 
   .pate,
   .pate::before,
@@ -150,47 +150,47 @@ footer {
     border-radius: 2px;
     transition: all .5s ease;
   }
+}
 
-  .pate{
-    position: relative;
-    top: calc(50% - 2px);
+.hamburger .pate{
+  position: relative;
+  top: calc(50% - 2px);
 
-    &::before,
-    &::after{
-      position: absolute;
+  &::before,
+  &::after{
+    position: absolute;
     content: '';
-    }
+  }
 
-    &::before{
-      top: -9px;
-    }
+  &::before{
+    top: -9px;
+  }
 
-    &::after{
-      top: 9px;
-    }
+  &::after{
+    top: 9px;
   }
 }
-  
+
+
 #hamburger{
-  display: none;
+display: none;
 
-  &:checked{
-    + .hamburger .pate{
-      background-color: transparent;
+&:checked{
+  + .hamburger .pate{
+    background-color: transparent;
 
-      &::before{
-        transform: rotate(45deg) translate(5px,5px);
-      } 
-  
-      &::after{
-        transform: rotate(-45deg) translate(7px,-8px);
-      }
+    &::before{
+      transform: rotate(45deg) translate(5px,5px);
+    } 
 
-      ~ .header-right{
-        right: 0;
-      }
+    &::after{
+      transform: rotate(-45deg) translate(7px,-8px);
+    }
 
-    }    
+    ~ .header-right{
+      right: 0;
+    }
 
-}  
+  }    
 }
+}    
