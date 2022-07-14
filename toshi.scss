@@ -47,13 +47,13 @@ header{
   border: solid 1px gold;
   position: relative;
 
-
   .kv-slide{
     text-align: center;
   }
 
   .kv-text{
       position: absolute;
+      height: 100%;
       width: 100%;
       top: 235px;
       left: 325px;
@@ -91,6 +91,7 @@ header{
 
     .kv-logo{
       position: static;
+      width: 30%;
     }
 
     h3{
@@ -109,7 +110,7 @@ header{
       background-color: gray;
    
        position: absolute;
-       width: 80%;
+       width: 70%;
        height: auto;
        top: 270px;
        left: 0px;
