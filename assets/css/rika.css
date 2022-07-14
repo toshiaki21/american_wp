@@ -49,7 +49,6 @@ h1 {
 }
 
 #blog .blog-boxes {
-  border: 1px solid black;
   width: 320px;
   margin-bottom: 30px;
 }
@@ -68,7 +67,7 @@ h1 {
 
 @media screen and (max-width: 767px) {
   #blog .blog-boxes-p {
-    padding: 0px 40px;
+    padding: 0px 45px;
   }
 }
 
@@ -86,7 +85,7 @@ h1 {
 @media screen and (max-width: 767px) {
   #blog .blog-boxes h2 {
     font-size: 13px;
-    right: 45px;
+    right: 50px;
   }
 }
 

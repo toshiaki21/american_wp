@@ -53,7 +53,7 @@ h1{
         }
 
         &-boxes{
-            border: 1px solid black;
+            // border: 1px solid black;
             width: 320px;
             margin-bottom: 30px;
 
@@ -69,7 +69,7 @@ h1{
                 position: relative;
 
                 @media screen and (max-width: 767px){
-                    padding: 0px 40px;
+                    padding: 0px 45px;
                 }
                 
                 .day{
@@ -88,7 +88,7 @@ h1{
 
                 @media screen and (max-width: 767px){
                     font-size: 13px;
-                    right: 45px;
+                    right: 50px;
                 }
             }
 
